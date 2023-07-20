@@ -9,7 +9,7 @@ function App() {
 
   const subscribeEmail = async (event) => {
     event.preventDefault();
-    const url = '';
+    const url = process.env.REACT_APP_API_KEY;
   
     const requestOptions = {
       mode: 'no-cors',
