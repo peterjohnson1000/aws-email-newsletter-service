@@ -6,6 +6,7 @@ function App() {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(true);
   console.log(email);
+  console.log(process.env.REACT_APP_API_KEY);
 
   const subscribeEmail = async (event) => {
     event.preventDefault();
